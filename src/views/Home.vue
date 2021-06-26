@@ -50,4 +50,9 @@ img {
   display: flex;
   justify-content: space-between;
 }
+
+a:hover,
+a:visited {
+  text-decoration: underline;
+}
 </style>
