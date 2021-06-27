@@ -60,4 +60,16 @@ p {
   font-size: 20px;
   text-align: left;
 }
+
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+  .experience-details {
+    flex-direction: column;
+  }
+
+  .experience-details p {
+    margin: 0;
+    padding: 30px 15px;
+  }
+}
 </style>

@@ -18,7 +18,7 @@
           >{{ destination.name }}</router-link
         >
       </li>
-      <li>
+      <li class="links">
         <router-link to="/user">Dashboard</router-link>
       </li>
     </ul>
@@ -77,5 +77,18 @@ export default {
   font-size: 20px;
   color: rosybrown;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+  #nav {
+    position: relative;
+  }
+  .nav-links {
+    flex-direction: column;
+  }
+  .links {
+    padding: 10px 0;
+  }
 }
 </style>

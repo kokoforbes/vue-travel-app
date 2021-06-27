@@ -27,6 +27,7 @@
               params: { experienceSlug: experience.slug },
               hash: '#experience',
             }"
+            class="experience"
           >
             <img
               :src="require(`@/assets/${experience.image}`)"
@@ -115,5 +116,17 @@ p {
   font-size: 25px;
   font-weight: bold;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+  .destination-details {
+    flex-direction: column;
+  }
+
+  .destination-details p {
+    margin: 0;
+    padding: 30px 15px;
+  }
 }
 </style>
