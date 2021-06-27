@@ -15,7 +15,7 @@
     <section class="experiences">
       <h2>Top experiences in {{ destination.name }}</h2>
 
-      <div class="cards">
+      <div class="cards" id="experience">
         <div
           class="card"
           v-for="experience in destination.experiences"
@@ -25,6 +25,7 @@
             :to="{
               name: 'ExperienceDetails',
               params: { experienceSlug: experience.slug },
+              hash: '#experience',
             }"
           >
             <img
@@ -86,6 +87,10 @@ p {
   margin: 0 40px;
   font-size: 20px;
   text-align: left;
+}
+
+.experiences {
+  padding: 40px 0;
 }
 
 .cards {
