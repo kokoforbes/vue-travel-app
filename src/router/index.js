@@ -65,6 +65,10 @@ const router = new VueRouter({
 
       if (to.hash) {
         position.selector = to.hash;
+
+        if (to.hash === "#experience") {
+          position.offset = { y: 140 };
+        }
         if (document.querySelector(to.hash)) {
           return position;
         }
