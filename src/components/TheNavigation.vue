@@ -18,6 +18,9 @@
           >{{ destination.name }}</router-link
         >
       </li>
+      <li>
+        <router-link to="/user">Dashboard</router-link>
+      </li>
     </ul>
   </div>
 </template>

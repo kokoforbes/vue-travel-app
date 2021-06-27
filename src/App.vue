@@ -35,6 +35,14 @@ export default {
   opacity: 0;
 }
 
+.btn {
+  background-color: green;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
 /* NAME="SLIDE" */
 /* mode="out-in" */
 /* .slide-enter-active,
